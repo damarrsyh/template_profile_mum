@@ -5244,6 +5244,8 @@ fieldset:disabled .btn {
 
 .card-title {
   margin-bottom: 0.5rem;
+  color: #fff;
+  letter-spacing: 3px;
 }
 
 .card-subtitle {
@@ -5253,6 +5255,7 @@ fieldset:disabled .btn {
 
 .card-text:last-child {
   margin-bottom: 0;
+  letter-spacing: 2px;
 }
 
 .card-link+.card-link {
@@ -12778,6 +12781,8 @@ section {
 
 .slideCol p {
   margin: 0px !important;
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 2px var(--bs-dark);
 }
 
 .scroller {

@@ -40,7 +40,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
+  --bs-light: #838383;
   --bs-dark: #212529;
   --bs-primary-rgb: 165, 45, 45;
   --bs-secondary-rgb: 108, 117, 125;
@@ -4690,8 +4690,7 @@ fieldset:disabled .btn {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: #fff;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -12300,7 +12299,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #000;
+  background-color: var(--bs-primary);
   opacity: 1;
 }
 
@@ -12321,7 +12320,7 @@ hr.divider-light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  color: #fff;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
@@ -12335,6 +12334,7 @@ hr.divider-light {
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #a52d2d !important;
+  font-weight: bold;
 }
 
 @media (min-width: 1000px) {
@@ -12545,7 +12545,7 @@ header.masthead {
   color: white;
   border: 7px solid lightgrey;
   border-radius: 100%;
-  background-color: rgb(33 37 41);
+  background-color: var(--bs-primary);
 }
 
 .timeline>li .timeline-image h4,
@@ -13002,4 +13002,13 @@ section {
     font-size: 55pt;
     text-align: left;
   }
+}
+
+.hov-1 {
+  transition: transform .75s;
+  color: var(--bs-dark);
+}
+
+.hov:hover .hov-1 {
+  transform: scale(1.15);
 }
